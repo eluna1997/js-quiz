@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <!--    Start Section     -->
+        <div id="start">Start Quiz</div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>Quiz Guide</h2>
+            <h4>1. You Have Only 15 Seconds To Answer The Question.</h4>
+            <h4>2. Choice Wisely. Answer Can't Be Changed Once Chosen.</h4>
+            <h4>3. You'll Get A Point If You Answer Correctly.</h4>
+            <h4>4. Once You Start You Can't Back Out.</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Begin</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+                <h5>Javascript Quiz App</h5>
+                <div id="timer">
+                    <h6>Time Remaining</h6>
+                    <h6 id="time">15</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+            <div id="answersSection">
+                <h3 id="total_correct">0 Of 10 Questions</h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <i class="fas fa-trophy"></i>
+            <h6>You Have Completed The Quiz</h6>
+            <h6 id="points">You Got 0 Out Of 10</h6>
+            <button id="quit">Quit Quiz</button>
+            <button id="startAgain">Start Again</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
